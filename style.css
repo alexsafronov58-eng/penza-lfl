@@ -27,3 +27,37 @@
 .tile::after{z-index:1;pointer-events:none}
 .tile-body{z-index:2}
 .intro-artwork img{display:block;visibility:visible}
+
+/* PENZA LFL — резервное отображение изображений */
+
+.intro-artwork {
+  background: #000 url("./intro_final.png")
+    center center / contain no-repeat !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.tile:nth-child(1) {
+  background: url("./card0.webp") center / cover no-repeat;
+}
+.tile:nth-child(2) {
+  background: url("./card1.webp") center / cover no-repeat;
+}
+.tile:nth-child(3) {
+  background: url("./card2.webp") center / cover no-repeat;
+}
+.tile:nth-child(4) {
+  background: url("./card3.webp") center / cover no-repeat;
+}
+.tile:nth-child(5) {
+  background: url("./card4.webp") center / cover no-repeat;
+}
+.tile:nth-child(6) {
+  background: url("./card5.webp") center / cover no-repeat;
+}
+
+.backdrop {
+  background:
+    linear-gradient(#05090bb8, #05090ce8 60%, #05090c),
+    url("./arena.png") center top / cover no-repeat;
+}
