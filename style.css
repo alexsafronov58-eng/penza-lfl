@@ -43,3 +43,45 @@
 }
 @media(max-width:380px){.tile h2{font-size:19px!important}.tile h2 strong{font-size:40px!important}.brand small{font-size:5px!important}}
 @media(prefers-reduced-motion:reduce){.tile{animation:none!important}}
+
+/* PENZA LFL 2.2 — Mobile layout fix */
+@media (max-width: 650px) {
+  .arena {
+    min-height: 0;
+    padding: 18px 0 10px;
+    overflow: hidden;
+  }
+
+  .track {
+    gap: 12px;
+    padding: 14px max(20px, calc((100vw - 290px) / 2)) 20px;
+    scroll-padding-inline: max(20px, calc((100vw - 290px) / 2));
+    scroll-snap-type: x mandatory;
+  }
+
+  .tile {
+    flex: 0 0 290px;
+    min-width: 290px;
+    height: 390px;
+    scroll-snap-align: center;
+  }
+
+  .tile h2 {
+    font-size: 25px;
+  }
+
+  .tile h2 strong {
+    font-size: 48px;
+  }
+
+  .arrow,
+  .arrow-left,
+  .arrow-right {
+    display: none !important;
+  }
+
+  .dashboard {
+    position: relative;
+    z-index: 2;
+  }
+}
