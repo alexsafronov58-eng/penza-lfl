@@ -13,3 +13,33 @@
 }
 @media(max-width:390px){.brand strong{font-size:18px}.brand small{font-size:5px}.track{padding-left:max(16px,calc((100vw - 216px)/2));padding-right:max(16px,calc((100vw - 216px)/2))}.tile{flex-basis:216px;min-width:216px;width:216px;height:314px}.tile h2{font-size:21px}.tile h2 strong{font-size:45px}}
 @media(prefers-reduced-motion:reduce){.tile{animation:none}}
+
+/* PENZA LFL 2.2 — clean, swipe-first mobile layout */
+@media(max-width:650px){
+  /* The arena source artwork includes large lettering; hide it behind a calm dark layer on mobile. */
+  .site{background-image:radial-gradient(ellipse at 50% 11%,#1a302b 0%,#081317 32%,#05090c 72%)!important;background-color:#05090c!important;background-attachment:scroll!important;background-size:cover!important}
+  .arena{padding:12px 0 0!important;min-height:0!important;overflow:hidden}
+  .carousel-shell{position:relative;overflow:hidden}
+  .track{gap:12px!important;padding:12px 0 17px max(16px,calc((100vw - min(72vw,260px))/2))!important;scroll-padding-inline-start:max(16px,calc((100vw - min(72vw,260px))/2))!important;scroll-snap-type:x mandatory!important;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y}
+  .track:after{content:'';flex:0 0 max(16px,calc((100vw - min(72vw,260px))/2 - 12px));height:1px}
+  .tile{flex:0 0 min(72vw,260px)!important;width:min(72vw,260px)!important;min-width:0!important;height:clamp(305px,93vw,355px)!important;scroll-snap-align:start!important;border-radius:18px!important;animation:none!important;transform:none!important}
+  .tile-content{left:14px!important;right:14px!important;bottom:14px!important}
+  .tile h2{font-size:clamp(19px,5.6vw,26px)!important;line-height:1.08!important;letter-spacing:-.6px;overflow-wrap:normal!important;word-break:normal}
+  .tile h2 strong{font-size:clamp(39px,11vw,53px)!important;line-height:1.05!important}
+  .tile p{font-size:10px!important;line-height:1.5!important;max-width:100%;min-height:0!important}
+  .tile-kicker{font-size:9px!important}
+  .tile .round-go{margin-top:8px}
+  .arrow,.arrow-left,.arrow-right{display:none!important;visibility:hidden!important;pointer-events:none!important}
+  .dots{margin:2px auto 14px!important}
+  .header{gap:8px!important}.brand{min-width:0!important}.brand strong{font-size:clamp(17px,5vw,21px)!important}.brand small{font-size:5.6px!important}
+  .head-actions{gap:7px!important}.head-actions .profile{width:38px!important;height:38px!important;min-width:38px!important;border-radius:12px!important;background:#0c1719!important;border:1px solid #647b65!important}
+  .profile .avatar{display:grid!important;place-items:center!important;width:28px!important;height:28px!important;color:var(--lime)!important}.profile .avatar svg{width:21px;height:21px}
+  .icon-btn svg{width:21px;height:21px}
+  .mobile-nav{grid-template-columns:repeat(5,minmax(0,1fr))!important;align-items:center;min-height:67px;padding:9px 7px calc(8px + env(safe-area-inset-bottom))!important;background:#071116f5!important;box-shadow:0 -8px 30px #0008}
+  .mobile-nav a,.mobile-nav button{display:flex!important;align-items:center!important;justify-content:center!important;gap:5px!important;font-size:10px!important;min-width:0!important;text-align:center;white-space:nowrap}
+  .mobile-nav svg{display:block;width:22px;height:22px;flex-shrink:0}
+  .mobile-nav span{font-size:10px!important;line-height:1.2!important}
+  .dashboard{padding-top:8px!important}
+}
+@media(max-width:380px){.tile h2{font-size:19px!important}.tile h2 strong{font-size:40px!important}.brand small{font-size:5px!important}}
+@media(prefers-reduced-motion:reduce){.tile{animation:none!important}}
